@@ -22,7 +22,7 @@
 
 @implementation ViewController
 
-
+#warning -- Enter your Mapbox Access Token in Info.plist
 
 - (void)viewDidLoad {
     [super viewDidLoad];
