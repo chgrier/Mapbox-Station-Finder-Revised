@@ -7,7 +7,7 @@
 //
 
 #import "ViewController.h"
-#import "Mapbox.h"
+#import "Mapbox/Mapbox.h"
 #import "Station.h"
 #import "WebViewController.h"
 #import "StationDotsView.h"
@@ -28,8 +28,7 @@
     [super viewDidLoad];
    
     //  set style to Emerald and initizalize Mapbox mapview and
-    NSURL *styleURL = [NSURL URLWithString:@"asset://styles/emerald-v8.json"];
-    self.mapView = [[MGLMapView alloc] initWithFrame:self.view.bounds styleURL:styleURL];
+    self.mapView = [[MGLMapView alloc] initWithFrame:self.view.bounds styleURL:[MGLStyle emeraldStyleURL]];
     
     //self.mapView = [[MGLMapView alloc] initWithFrame:self.view.bounds];
     self.mapView.autoresizingMask = UIViewAutoresizingFlexibleWidth | UIViewAutoresizingFlexibleHeight;

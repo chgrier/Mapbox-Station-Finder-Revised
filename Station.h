@@ -7,7 +7,7 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "Mapbox.h"
+#import "Mapbox/Mapbox.h"
 
 @interface Station : NSObject <MGLAnnotation>
 
